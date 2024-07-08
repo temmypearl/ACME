@@ -66,7 +66,7 @@ header a:active{
     background:url('../img/showcase1.jpg') no-repeat 0 -400px;
     text-align: center;
     color: #ffffff;
-    height: calc(75vh - 12vh);
+    height: 80vh
 }
 #showcase .container {
     display: flex;
@@ -87,17 +87,16 @@ header a:active{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.6rem 9rem;
     color: #ffffff;
     background: #35424a;
+    padding: 2rem 7rem;
 }
 
 #newsletter h2{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 #newsletter form{
-    float: right;
-    margin-top: 15px;
+    
 }
 #newsletter input[type="email"]{
     padding: 4px;
@@ -210,3 +209,17 @@ ul#services li{
 
 
 /*MEDIA QUERIES*/
+@media (max-width : 888px){
+    .newsletter{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width : 716px){
+    .boxes{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 90vh;
+    }
+}
